@@ -3,139 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio - Alan Carrera</title>
+    <title>Mi Portafolio</title>
+
     <style>
-        /* Configuración General */
         body {
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 20px;
-            background-color: #9ebc86;
-            margin: 0;
-            padding: 0;
-            line-height: 1.7;
+            font-family: Arial, sans-serif;
         }
-
-        /* Contenedor Principal */
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-
-        /* Introducción */
-        .header {
-            text-align: center;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #fffefe;
-            margin-bottom: 40px;
-        }
-
-        /* Títulos */
-        h1, h2 {
-            color: #0056b3;
-        }
-
-        h2 {
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
-        }
-
-        p {
-            font-size: 16px;
-            color: #333;
-        }
-
-        .proyecto {
-            background-color: #14a2a7d8;
-            border-radius: 8px;
-            padding: 25px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-        }
-
-        a {
-            color: #c102bb;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Videos */
-        .video-responsive {
-            position: relative;
-            overflow: hidden;
-            padding-top: 56.25%;
-            margin-top: 15px;
-        }
-
-        .video-responsive iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
+        .descargar {
+            cursor: pointer;
         }
     </style>
 </head>
-
 <body>
 
-    <div class="container">
+    <h1 id="titulo-principal">Mi portafolio y proyectos</h1>
 
-        <header class="header">
-            <h1>Mi Portafolio de Proyectos</h1>
-            <p><strong>Nombre:</strong> Alan Gabriel Carrera</p>
-            <p><strong>Descripción:</strong> Soy actualmente estudiante de la carrera de videojuegos en la UNPAZ y me encanta hacer videojuegos. Tengo 27 años y nací en Jose C. Paz, Buenos Aires, Argentina. Algunos de mis videojuegos favoritos son juegos de Supervivencia, Indies y FPS.</p>
-        </header>
-
-        <div class="proyecto">
-            <h2>Proyecto 1: Scratch</h2>
-            <p><strong>Descripción:</strong> Este es mi proyecto de Scratch, un juego que hice como parte del curso de Fundamentos de la Programación I. Podés descargarlo y jugarlo acá:</p>
-            <a href="https://scratch.mit.edu/projects/1187344376">Proyecto Scratch</a>
-
-            <p><strong>Video de Gameplay:</strong></p>
-            <div class="video-responsive">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/zyZRllixEvY" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-            </div>
-
-            <p><strong>Informe:</strong> Informe completo: <a href="https://drive.google.com/drive/folders/1BWzc4EBsBpFd88XNfEFwILHbBkSUIHxL?usp=sharing">Click aquí</a></p>
-        </div>
-
-        <div class="proyecto">
-            <h2>Proyecto 2: RPG Maker The Adventure</h2>
-            <p><strong>Descripción:</strong> Este es mi proyecto de RPG Maker del segundo cuatrimestre 2024.</p>
-            <a id="descarga1" href="https://drive.google.com/drive/folders/1WNIMvUuK5jvicCVo1WyCH8YpDQFuTVoY?usp=sharing">Descargar aquí</a>
-
-            <p><strong>Video de Gameplay:</strong></p>
-            <div class="video-responsive">
-                <iframe src="https://www.youtube.com/embed/lryHlwEI1eM?si=8VnSnasptZTGdPuB" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-
-        <div class="proyecto">
-            <h2>Proyecto 3: Unity Encuentra a Giver</h2>
-            <p><strong>Descripción:</strong> Este es mi proyecto en Unity, un videojuego 3D.</p>
-            <a id="descarga2" href="https://drive.google.com/drive/folders/105aUESheK4BkRCPXEtdpOikAerVk4IWl?usp=sharing">Descargar aquí</a>
-
-            <p><strong>Video de Gameplay:</strong></p>
-            <div class="video-responsive">
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dxTseV-pkZo?si=Iy55efc3hQyKMcym" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-
-    </div>
+    <h2 id="descargar1" class="descargar">Descargar aquí</h2>
+    <h2 id="descargar2" class="descargar">Descargar aquí</h2>
 
     <script>
-        document.getElementById("descarga1").onmouseenter = function() {
-            alert("Vas a descargar The Adventure");
-        }
+        window.onload = function () {
 
-        document.getElementById("descarga2").onmouseenter = function() {
-            alert("Vas a descargar Encuentra a Giver");
+            document.getElementById("titulo-principal").style.color = "red";
+
+            // mostrar la alerta solo una vez
+            let mostrado1 = false;
+            let mostrado2 = false;
+
+            document.getElementById("descargar1").addEventListener("mouseenter", () => {
+                if (!mostrado1) {
+                    alert("Gracias por descargar");
+                    mostrado1 = true;
+                }
+            });
+
+            // Evento para descargar 2
+            document.getElementById("descargar2").addEventListener("mouseenter", () => {
+                if (!mostrado2) {
+                    alert("Gracias por descargar");
+                    mostrado2 = true;
+                }
+            });
         }
     </script>
 
