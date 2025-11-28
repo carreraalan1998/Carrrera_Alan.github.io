@@ -7,26 +7,21 @@
     <style>
         /* Configuración General */
         body {
-            /* Fuente de las letras*/
             font-family: 'Courier New', Courier, monospace;
             font-size: 20px;
-            
-            /* Color del fondo*/
             background-color: #9ebc86;
-            
             margin: 0;
             padding: 0;
-            line-height: 1.7; /* Mejora la legibilidad */
+            line-height: 1.7;
         }
 
         /* Contenedor Principal */
         .container {
-            max-width: 900px; /* Limita el ancho*/
-            margin: 20px auto; /* Centra el contenido en la página */
+            max-width: 900px;
+            margin: 20px auto;
             padding: 20px;
         }
 
-        /* Introducción */
         .header {
             text-align: center;
             padding-bottom: 20px;
@@ -34,49 +29,42 @@
             margin-bottom: 40px;
         }
 
-        /* Títulos (H1 y H2) */
         h1, h2 {
-            
             color: #0056b3;
         }
 
         h2 {
-            /* Línea debajo de cada título del proyecto */
             border-bottom: 1px solid #eee;
             padding-bottom: 5px;
         }
 
         p {
             font-size: 16px;
-            color: #333; 
+            color: #333;
         }
 
         .proyecto {
-            background-color: #14a2a7d8; /* Fondo para las tarjetas */
-            border-radius: 8px; /* Bordes redondeados */
+            background-color: #14a2a7d8;
+            border-radius: 8px;
             padding: 25px;
-            margin-bottom: 30px; /* Espacio entre proyectos */
-            
-            /* Sombra flotante */
+            margin-bottom: 30px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
         }
 
-        /* Estilo de Enlaces */
         a {
-            color: #c102bb; /* para los enlaces */
+            color: #c102bb;
             text-decoration: none;
             font-weight: bold;
         }
 
         a:hover {
-            text-decoration: underline; /*Subrayado solo al pasar el mouse */
+            text-decoration: underline;
         }
 
-        /* Esto hace que los videos de YouTube se adapten al tamaño de la pantalla */
         .video-responsive {
             position: relative;
             overflow: hidden;
-            padding-top: 56.25%; /* Proporción 16:9 */
+            padding-top: 56.25%;
             margin-top: 15px;
         }
 
@@ -88,20 +76,11 @@
             height: 100%;
             border: 0;
         }
-
     </style>
 </head>
-    <script>
-    console.log("Página cargada correctamente");
-
-    // Cambia el color del título al cargar
-    window.onload = function() {
-        const titulo = document.querySelector("h1");
-        titulo.style.color = "#ff006a"; // Color rosa fuerte
-    }
-</script>
 <body>
-      <div class="container">
+
+    <div class="container">
 
         <header class="header">
             <h1>Mi Portafolio de Proyectos</h1>
@@ -109,39 +88,53 @@
             <p><strong>Descripción:</strong> Soy actualmente estudiante de la carrera de videojuegos en la UNPAZ y me encanta hacer videojuegos. Tengo 27 años y nací en Jose C. Paz, Buenos Aires, Argentina. Algunos de mis videojuegos favoritos son juegos de Supervivencia, Indies y FPS.</p>
         </header>
 
-         <div class="proyecto">
+        <div class="proyecto">
             <h2>Proyecto 1: Scratch</h2>
             <p><strong>Descripción:</strong> Este es mi proyecto de Scratch, un juego que hice como parte del curso de Fundamentos de la Programación I. Podés descargarlo y jugarlo acá: </p>
             <a href="https://scratch.mit.edu/projects/1187344376">Proyecto Scratch</a>
             
             <p><strong>Video de Gameplay:</strong></p>
             <div class="video-responsive">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/zyZRllixEvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-         </div>
-            <p><strong>Informe:</strong> Acá describo cómo hice el proyecto de Scratch. Pueden descargar el informe completo desde acá: <a href="https://drive.google.com/drive/folders/1BWzc4EBsBpFd88XNfEFwILHbBkSUIHxL?usp=sharing">Informe Completo</a></p>
-         </div><div class="proyecto">
-             
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zyZRllixEvY"
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <p><strong>Informe:</strong> Pueden descargar el informe completo desde acá: 
+            <a href="https://drive.google.com/drive/folders/1BWzc4EBsBpFd88XNfEFwILHbBkSUIHxL?usp=sharing">Informe Completo</a></p>
+        </div>
+
+        <div class="proyecto">
             <h2>Proyecto 2: RPG Maker The Adventure</h2>
-            <p><strong>Descripción:</strong> Este es mi proyecto de RPG Maker. Es un juego de rol que creé en la materia de Fundamentos de la Programación I en el segundo cuatrimestre del 2024. Podés descargarlo y jugarlo acá.</p>
-            <a href="https://drive.google.com/drive/folders/1WNIMvUuK5jvicCVo1WyCH8YpDQFuTVoY?usp=sharing" >Descargar aqui</a>
+            <p><strong>Descripción:</strong> Este es mi proyecto de RPG Maker...</p>
+            <a href="https://drive.google.com/drive/folders/1WNIMvUuK5jvicCVo1WyCH8YpDQFuTVoY?usp=sharing">Descargar aquí</a>
             
             <p><strong>Video de Gameplay:</strong></p>
             <div class="video-responsive">
-                <iframe src="https://www.youtube.com/embed/lryHlwEI1eM?si=8VnSnasptZTGdPuB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/lryHlwEI1eM?si=8VnSnasptZTGdPuB" frameborder="0" allowfullscreen></iframe>
             </div>
-            
-            <p>Arriba estan tanto el juego como el informe.
-         </div><div class="proyecto">
+        </div>
+
+        <div class="proyecto">
             <h2>Proyecto 3: Unity Encuentra a Giver</h2>
-            <p><strong>Descripción:</strong> Este es mi proyecto de Unity, el cuál consiste en un videojuego en 3D. Podés descargarlo y jugarlo acá: </p>
-            <a href="https://drive.google.com/drive/folders/105aUESheK4BkRCPXEtdpOikAerVk4IWl?usp=sharing">Descargar Aqui</a>
+            <p><strong>Descripción:</strong> Este es mi proyecto de Unity en 3D.</p>
+            <a href="https://drive.google.com/drive/folders/105aUESheK4BkRCPXEtdpOikAerVk4IWl?usp=sharing">Descargar Aquí</a>
             
             <p><strong>Video de Gameplay:</strong></p>
             <div class="video-responsive">
-               <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dxTseV-pkZo?si=Iy55efc3hQyKMcym" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dxTseV-pkZo?si=Iy55efc3hQyKMcym"
+                frameborder="0" allowfullscreen></iframe>
             </div>
-            
-            <p>Arriba estan tanto el juego como el informe.
+        </div>
+
+    </div>
+    <script>
+        console.log("Página cargada correctamente");
+
+        window.onload = function() {
+            const titulo = document.querySelector("h1");
+            titulo.style.color = "#ff006a"; // rosa fuerte
+        }
+    </script>
+
+</body>
 </html>
-
-
